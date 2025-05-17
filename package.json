@@ -1,0 +1,29 @@
+{
+  "name": "xzap-fun",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun src/index.ts",
+    "dev": "bun --watch src/index.ts",
+    "format": "prettier --write .",
+    "migrate": "drizzle-kit push"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pg": "^8.15.2",
+    "drizzle-kit": "^0.31.1",
+    "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@scure/base": "^1.2.5",
+    "@solana/kit": "^2.1.1",
+    "@solana/web3.js": "1",
+    "agent-twitter-client": "^0.0.18",
+    "drizzle-orm": "^0.43.1",
+    "pg": "^8.16.0"
+  }
+}
